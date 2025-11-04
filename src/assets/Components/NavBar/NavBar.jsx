@@ -3,7 +3,7 @@ import SearchBar from './SearchBar'
 const NavBar = () => {
     return (
         <div>
-            <div className="navbar shadow-md bg-black/40 backdrop-blur-md text-white fixed top-0 z-1000">
+            <div className="navbar shadow-md bg-black/40 backdrop-blur-md text-white font-mon fixed top-0 left-0 right-0 z-1000">
                 <div className='lg:w-11/12 w-full mx-auto flex justify-between items-center'>
                     <div className="navbar-start ">
                         {/* Mobile UI Starts*/}
@@ -59,9 +59,9 @@ const NavBar = () => {
                         {/* Mobile UI Ends*/}
 
                         <div className='flex items-center gap-20'>
-                            <div className='flex items-center justify-center gap-1 lg:gap-2 '>
-                                <img className='w-8 lg:w-12' src="/Logos/CM-Text-.png" alt="" />
-                                <a className="text-2xl lg:text-4xl text-orange-700  font-extrabold mb-1">CineMine</a>
+                            <div className='flex items-center justify-center gap-0 lg:gap-2 '>
+                                <img className='w-9 lg:w-16' src="/Logos/CM-Text-.png" alt="" />
+                                <a className="text-2xl lg:text-4xl text-orange-700 font-grif  font-extrabold mb-1">CineMine</a>
                             </div>
 
                             {/* Desctop UI Starts*/}

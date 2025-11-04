@@ -1,5 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Griffy&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 @plugin "daisyui";
+
+@theme {
+  --font-grif: "Griffy", system-ui;
+  --font-mon: "Montserrat", sans-serif;
+}
+
+html, body, #root{
+  @apply bg-black text-white min-h-screen
+}
 
 .mySwiper .swiper-pagination-bullet {
   background-color: rgba(236, 209, 52, 0.5) !important;
