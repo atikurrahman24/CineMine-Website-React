@@ -1,2 +1,10 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+.mySwiper .swiper-pagination-bullet {
+  background-color: rgba(236, 209, 52, 0.5) !important;
+}
+.mySwiper .swiper-pagination-bullet-active {
+  background-color: #fa6915 !important;
+  opacity: 0.8;
+}
