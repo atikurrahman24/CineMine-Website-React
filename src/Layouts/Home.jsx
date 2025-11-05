@@ -1,7 +1,7 @@
 import { Toaster } from 'react-hot-toast'
-import BannerCarousel from '../Banner/BannerCarousel'
-import MovieGalary from '../MovieGalary/MovieGalary'
-import NavBar from '../NavBar/NavBar'
+import NavBar from '../Components/NavBar/NavBar'
+import BannerCarousel from '../Components/BannerCarousel'
+import MovieGalary from '../Components/MovieGalary'
 
 const Home = () => {
   return (

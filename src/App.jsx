@@ -1,5 +1,6 @@
 import React from 'react'
-import Home from './assets/Components/Home/Home'
+import Home from './Layouts/Home'
+
 
 const App = () => {
   return (
