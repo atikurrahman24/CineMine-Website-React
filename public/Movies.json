@@ -4,7 +4,7 @@
     "title": "Inception",
     "description": "A skilled thief, who steals secrets from within the subconscious, is given a chance to have his criminal history erased if he can successfully perform an inception.",
     "cover_picture": "https://example.com/images/inception_cover.jpg",
-    "card_picture": "https://ibb.co.com/why4HN9X",
+    "card_picture": "https://ibb.co.com/Qvz0bjjF",
     "released_date": "2010",
     "platform": "IMDb",
     "rating": 8.8,
@@ -20,7 +20,7 @@
     "title": "Avengers: Endgame",
     "description": "The Avengers assemble once more to reverse the damage caused by Thanos and restore balance to the universe.",
     "cover_picture": "https://example.com/images/endgame_cover.jpg",
-    "card_picture": "https://ibb.co.com/9m1QkMky",
+    "card_picture": "https://ibb.co.com/fYLw7GNC",
     "released_date": "2019",
     "platform": "Rotten Tomatoes",
     "rating": 8.4,
@@ -36,7 +36,7 @@
     "title": "Dune",
     "description": "Paul Atreides, a brilliant young man, must travel to the most dangerous planet in the universe to ensure the future of his family and people.",
     "cover_picture": "https://example.com/images/dune_cover.jpg",
-    "card_picture": "https://ibb.co.com/rKXcxQhq",
+    "card_picture": "https://ibb.co.com/CKptpTPZ",
     "released_date": "2021",
     "platform": "Critics",
     "rating": 8.2,
@@ -52,7 +52,7 @@
     "title": "Spider-Man: No Way Home",
     "description": "Peter Parker seeks Doctor Strange's help to make people forget he is Spider-Man, but the spell goes wrong.",
     "cover_picture": "https://example.com/images/spiderman_cover.jpg",
-    "card_picture": "https://ibb.co.com/jkCC2VHK",
+    "card_picture": "https://ibb.co.com/VWrYTBhG",
     "released_date": "2021",
     "platform": "IMDb",
     "rating": 8.3,
@@ -68,7 +68,7 @@
     "title": "Bahubali: The Beginning",
     "description": "An orphan grows up to discover his royal heritage and fight against an evil king to save his kingdom.",
     "cover_picture": "https://example.com/images/bahubali_cover.jpg",
-    "card_picture": "https://ibb.co.com/27mFYQ6G",
+    "card_picture": "https://ibb.co.com/x82fymCF",
     "released_date": "2015",
     "platform": "Rotten Tomatoes",
     "rating": 8.0,
@@ -320,3 +320,4 @@
     "category": "Bollywood"
   }
 ]
+

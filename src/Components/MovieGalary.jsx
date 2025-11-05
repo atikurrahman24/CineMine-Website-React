@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import CategoriesNav from './CategoriesNav';
 import toast from 'react-hot-toast';
+import MovieCard from './MovieCard';
 
 const MovieGalary = () => {
     const [movies, setMovies] = useState([]);
@@ -41,6 +42,26 @@ const MovieGalary = () => {
         selectCategory={selectCategory}
         setSelectCategory={setSelectCategory}
         ></CategoriesNav>
+        {
+          loading ? 
+          (<div className='flex justify-center items-center h-64'>
+            <span className="loading loading-dots loading-xl text-yellow-500"></span>
+          </div>)
+          : filterMovies.length > 0 ?
+          (
+            <>
+              <div className='grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
+                {
+                  visibleMovies.map(movie => (
+                    <MovieCard key={movie.id} movie={movie}></MovieCard>
+                  ))
+                }
+              </div>
+            </>
+          ) : (
+            <p className='text-gray-400 text-center'>No Movies Found</p>
+          )
+        }
     </div>
   )
 }
