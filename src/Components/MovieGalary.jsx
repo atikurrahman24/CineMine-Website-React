@@ -32,7 +32,7 @@ const MovieGalary = () => {
 
     const categories =["All", ...new Set(movies.map(m => m.category))]
     const filterMovies = selectCategory === "All" ? movies : movies.filter(m => m.category === selectCategory)
-    const visibleMovies = showAll ? filterMovies : filterMovies.slice(0,8)
+    const visibleMovies = showAll ? filterMovies : filterMovies.slice(0,10)
 
   return (
     <div className='w-11/12 mx-auto py-10'>
@@ -50,7 +50,7 @@ const MovieGalary = () => {
           : filterMovies.length > 0 ?
           (
             <>
-              <div className='grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
+              <div className='grid  grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6'>
                 {
                   visibleMovies.map(movie => (
                     <MovieCard key={movie.id} movie={movie}></MovieCard>
