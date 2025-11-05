@@ -5,7 +5,7 @@ const SearchBar = () => {
 
   return (
     <div className="relative flex justify-center">
-        
+
       {/* Desktop UI */}
       <label className="hidden lg:flex items-center gap-2 bg-white/10 rounded-full px-3 py-2 w-80 border border-transparent focus-within:border-yellow-500 transition duration-150">
         <svg

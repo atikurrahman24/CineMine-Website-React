@@ -13,8 +13,6 @@ const NavBar = () => {
                             </div>
 
                             <ul tabIndex="-1" className="menu menu-sm dropdown-content bg-black/20 backdrop-blur-md rounded-box z-1 mt-3 w-40 p-2 shadow">
-                                
-                                <li><a>Home</a></li>
                                 {/* Short List 1 */}
                                 <li>
                                     <details>
@@ -70,8 +68,6 @@ const NavBar = () => {
                             <div className="navbar-center hidden lg:flex ">
                                 {/* Center Items */}
                                 <ul className="menu menu-horizontal px-1 flex gap-6">
-
-                                    <li className='text-2xl text-white/80 hover:text-[#F6962F]'><a>Home</a></li>
                                     {/* Short List 1 */}
                                     <li>
                                         <details>
