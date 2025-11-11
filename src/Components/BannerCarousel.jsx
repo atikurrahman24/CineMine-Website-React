@@ -17,6 +17,7 @@ export default function BannerCarousel() {
           delay: 3000,
           disableOnInteraction: false,
         }}
+        speed={1000}
         loop={true}
         className="mySwiper w-full h-[60vh] md:h-[70vh] lg:h-[90vh]"
       >

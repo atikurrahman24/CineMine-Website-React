@@ -73,41 +73,41 @@ const NavBar = () => {
                                 {/* Short List 1 */}
                                 <li>
                                     <details>
-                                        <summary className='text-2xl text-white/80'>Types</summary>
+                                        <summary className='text-2xl text-white/80 hover:text-orange-600'>Types</summary>
                                         <ul className="p-2 text-lg bg-black/20 backdrop-blur-md">
-                                            <li className='hover:text-[#F6962F]'><a>Movies</a></li>
-                                            <li className='hover:text-[#F6962F]'><a>Series</a></li>
+                                            <li className='hover:text-orange-600'><a>Movies</a></li>
+                                            <li className='hover:text-orange-600'><a>Series</a></li>
                                         </ul>
                                     </details>
                                 </li>
                                 {/* Short List 2 */}
                                 <li>
                                     <details>
-                                        <summary className='text-2xl text-white/80'>Genres</summary>
+                                        <summary className='text-2xl text-white/80 hover:text-orange-600'>Genres</summary>
                                         <ul className="p-2 text-lg bg-black/20 backdrop-blur-md">
-                                            <li className='hover:text-[#F6962F]'><a>Action</a></li>
-                                            <li className='hover:text-[#F6962F]'><a>Fantacy</a></li>
-                                            <li className='hover:text-[#F6962F]'><a>Crime</a></li>
-                                            <li className='hover:text-[#F6962F]'><a>Drama</a></li>
-                                            <li className='hover:text-[#F6962F]'><a>Adventure</a></li>
-                                            <li className='hover:text-[#F6962F]'><a>Sci-Fi</a></li>
-                                            <li className='hover:text-[#F6962F]'><a>Comedy</a></li>
-                                            <li className='hover:text-[#F6962F]'><a>Thriller</a></li>
-                                            <li className='hover:text-[#F6962F]'><a>Romance</a></li>
-                                            <li className='hover:text-[#F6962F]'><a>Biography</a></li>
+                                            <li className='hover:text-orange-600'><a>Action</a></li>
+                                            <li className='hover:text-orange-600'><a>Fantacy</a></li>
+                                            <li className='hover:text-orange-600'><a>Crime</a></li>
+                                            <li className='hover:text-orange-600'><a>Drama</a></li>
+                                            <li className='hover:text-orange-600'><a>Adventure</a></li>
+                                            <li className='hover:text-orange-600'><a>Sci-Fi</a></li>
+                                            <li className='hover:text-orange-600'><a>Comedy</a></li>
+                                            <li className='hover:text-orange-600'><a>Thriller</a></li>
+                                            <li className='hover:text-orange-600'><a>Romance</a></li>
+                                            <li className='hover:text-orange-600'><a>Biography</a></li>
                                         </ul>
                                     </details>
                                 </li>
                                 {/* Short List 3 */}
                                 <li>
                                     <details className='text-2xl text-white/80'>
-                                        <summary>Industry</summary>
+                                        <summary className='text-2xl text-white/80 hover:text-orange-600'>Industry</summary>
                                         <ul className="p-2 text-lg bg-black/20 backdrop-blur-md">
-                                            <li className='hover:text-[#F6962F]'><a>Hollywood</a></li>
-                                            <li className='hover:text-[#F6962F]'><a>Bollywood</a></li>
-                                            <li className='hover:text-[#F6962F]'><a>MCU</a></li>
-                                            <li className='hover:text-[#F6962F]'><a>DCEU</a></li>
-                                            <li className='hover:text-[#F6962F]'><a>DCU</a></li>
+                                            <li className='hover:text-orange-600'><a>Hollywood</a></li>
+                                            <li className='hover:text-orange-600'><a>Bollywood</a></li>
+                                            <li className='hover:text-orange-600'><a>MCU</a></li>
+                                            <li className='hover:text-orange-600'><a>DCEU</a></li>
+                                            <li className='hover:text-orange-600'><a>DCU</a></li>
                                         </ul>
                                     </details>
                                 </li>

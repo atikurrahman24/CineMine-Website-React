@@ -7,7 +7,7 @@ const SearchBar = () => {
     <div className="relative flex justify-center">
 
       {/* Desktop UI */}
-      <label className="hidden lg:flex items-center gap-2 bg-white/10 rounded-full px-3 py-2 w-80 border border-transparent focus-within:border-yellow-500 transition duration-150">
+      <label className="hidden lg:flex items-center gap-2 bg-white/10 rounded-full px-3 py-2 w-80 border border-transparent focus-within:border-orange-600 transition duration-150">
         <svg
           className="h-[1em] opacity-50"
           xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +59,7 @@ const SearchBar = () => {
         )}
 
         {showSearch && (
-          <label className="flex items-center bg-white/10 rounded-full px-3 py-1 w-3/4 border border-yellow-500 transition duration-150">
+          <label className="flex items-center bg-white/10 rounded-full px-3 py-1 w-3/4 border border-orange-600 transition duration-150">
             <input
               type="search"
               required
