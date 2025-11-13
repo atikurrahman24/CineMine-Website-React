@@ -3,8 +3,9 @@ import CategoriesNav from './CategoriesNav';
 import toast from 'react-hot-toast';
 import MovieCard from './MovieCard';
 import FeaturedSlide from './FeaturedSlide';
+import SearchResults from '../Components/SearchResults'
 
-const MovieGalary = () => {
+const MovieGalary = ({results}) => {
   const [movies, setMovies] = useState([]);
 
   // A loading theme when fetching movies data
@@ -37,10 +38,12 @@ const MovieGalary = () => {
 
   return (
     <div className='w-11/12 mx-auto py-10'>
+      {/* Search results  */}
+      <SearchResults results={results} movies={movies} ></SearchResults>
 
       {/* Featureed Slider  */}
       <div className="py-4">
-        <p className='text-lg lg:text-2xl pb-8'>FEATURED MOVIES</p>
+        <p className='text-lg lg:text-2xl font-met pb-8'>FEATURED MOVIES</p>
         <div className=' pb-8'>
           {
             <FeaturedSlide key={movies.id} movies={movies}></FeaturedSlide>
@@ -49,7 +52,7 @@ const MovieGalary = () => {
       </div>
 
       {/* Category Navbar  */}
-      <p className='text-lg lg:text-2xl'>RECOMANDED FOR YOU</p>
+      <p className='text-lg lg:text-2xl font-met'>RECOMANDED FOR YOU</p>
       <CategoriesNav
         categories={categories}
         selectCategory={selectCategory}
@@ -65,7 +68,7 @@ const MovieGalary = () => {
           : filterMovies.length > 0 ?
             (
               <>
-                <div className='grid  grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-10 mx-8'>
+                <div className='grid  grid-cols-1 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 gap-10 mx-8'>
                   {
                     visibleMovies.map(movie => (
                       <MovieCard key={movie.id} movie={movie}></MovieCard>
@@ -76,9 +79,9 @@ const MovieGalary = () => {
                   filterMovies.length > 10 && (
                     <div className='flex justify-center mt-8'>
                       <button
-                      className='px-6 py-2 bg-orange-500 text-black font-bold rounded-full hover:bg-orange-400 transition-all duration-300'
-                      onClick={()=>setShowAll(!showAll)}
-                      >{showAll?"Show Less":"Show More"}</button>
+                        className='px-6 py-2 bg-orange-500 text-black font-bold rounded-full hover:bg-orange-400 transition-all duration-300'
+                        onClick={() => setShowAll(!showAll)}
+                      >{showAll ? "Show Less" : "Show More"}</button>
                     </div>
                   )
                 }

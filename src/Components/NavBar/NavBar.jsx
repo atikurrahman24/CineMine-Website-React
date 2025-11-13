@@ -1,10 +1,10 @@
 import SearchBar from './SearchBar'
 
-const NavBar = () => {
+const NavBar = ({results, setResults}) => {
     return (
         <div className="navbar shadow-md bg-black/40 backdrop-blur-md text-white font-mon fixed top-0 left-0 right-0 z-1000">
             <div className='lg:w-11/12 w-full mx-auto flex justify-between items-center'>
-                <div className="navbar-start">
+                <div className="navbar-start font-met">
                     {/* Mobile UI Starts*/}
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="lg:hidden ">
@@ -122,7 +122,7 @@ const NavBar = () => {
                 <div className="navbar-end">
                     <div className='flex items-center gap-1 lg:gap-4 '>
                         {/* Search Box*/}
-                        <SearchBar></SearchBar>
+                        <SearchBar results={results} setResults={setResults}></SearchBar>
                         {/* Avatar  */}
                         <div className="avatar ">
                             <div className="w-7 lg:w-10 rounded-full">

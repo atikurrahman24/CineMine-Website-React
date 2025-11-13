@@ -36,11 +36,11 @@ const FeaturedSlide = ({ movies }) => {
         {movies
           .filter(movie => movie.rating > 7)
           .map(movie => (
-            <div key={movie.id} className='p-2'>
-              <div className='bg-[#085e6483] font-mon flex flex-col border border-gray-700 rounded-2xl gap-3 py-3'>
+            <div key={movie.id} className='p-2 '>
+              <div className='bg-[#085e6483] w-50 font-mon border border-gray-700 rounded-2xl py-3 transition-transform duration-300 hover:scale-105'>
 
-                <img src={movie.card_picture} alt={movie.title} className=' h-50 mx-auto object-contain rounded-lg' />
-                <div className='py-1 flex flex-col gap-1 px-10 sm:px-6 md:px-6 lg:px-6 xl:px-6'>
+                <img src={movie.card_picture} alt={movie.title} className='h-40 md:h-40 lg:h-50 mx-auto object-contain rounded-lg' />
+                <div className='py-1 flex flex-col gap-1 px-2'>
                   <div className='details flex justify-between'>
                     <h3 className='line-clamp-1 overflow-hidden'>{movie.title}</h3>
                     <div className='flex gap-2 py-1'>

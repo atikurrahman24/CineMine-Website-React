@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const SearchBar = () => {
+const SearchBar = ({results, setResults}) => {
   const [showSearch, setShowSearch] = useState(false);
 
   return (
@@ -29,6 +29,8 @@ const SearchBar = () => {
           required
           placeholder="Search"
           className="bg-transparent outline-none text-sm text-white placeholder-white/60 flex-1"
+          value={results}
+          onChange={(event)=>setResults(event.target.value)}
         />
       </label>
 
@@ -66,6 +68,8 @@ const SearchBar = () => {
               autoFocus
               placeholder="Search"
               className="bg-transparent outline-none text-sm text-white placeholder-white/60 flex-1"
+              value={results}
+              onChange={(event)=>setResults(event.target.value)}
             />
             <button
               onClick={() => setShowSearch(false)}
