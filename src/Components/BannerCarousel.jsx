@@ -37,7 +37,7 @@ export default function BannerCarousel() {
         <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" />
         <div className="relative z-10 w-full flex flex-col items-center">
           <h1
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 drop-shadow-lg"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-met mb-6 drop-shadow-lg"
             style={{
               WebkitTextStroke: "1.5px black", // 🔹 Black Stroke
               textShadow: "2px 2px 18px rgba(0,0,0,1)", // 🔹 Deep shadow for visibility

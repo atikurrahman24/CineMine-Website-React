@@ -79,7 +79,7 @@ const MovieGalary = ({results}) => {
                   filterMovies.length > 10 && (
                     <div className='flex justify-center mt-8'>
                       <button
-                        className='px-6 py-2 bg-orange-500 text-black font-bold rounded-full hover:bg-orange-400 transition-all duration-300'
+                        className='px-6 py-2 bg-orange-500 text-black font-met rounded-full hover:bg-orange-400 transition-all duration-300'
                         onClick={() => setShowAll(!showAll)}
                       >{showAll ? "Show Less" : "Show More"}</button>
                     </div>

@@ -1,3 +1,4 @@
+import { Link } from 'react-router'
 import SearchBar from './SearchBar'
 
 const NavBar = ({results, setResults}) => {
@@ -58,13 +59,15 @@ const NavBar = ({results, setResults}) => {
                     {/* Mobile UI Ends*/}
 
                     <div className='flex items-center gap-20'>
-                        <div className='flex items-center justify-center gap-0 lg:gap-2 '>
-                            <img className='w-8 lg:w-20' src="/Logos/CM-Text-.png" alt="" />
-                            <div className='flex flex-col leading-none'>
-                                <a className="text-xl lg:text-4xl text-orange-700 font-met font-semibold">CineMine</a>
-                                <p className='hidden lg:block font-met text-[#c4e5e9] pl-1 text-[13px] m-0'>Universe of Cinema </p>
+                        <Link to="/">
+                            <div className='flex items-center justify-center gap-0 lg:gap-2 '>
+                                <img className='w-8 lg:w-18' src="/Logos/CM-Text-.png" alt="" />
+                                <div className='flex flex-col leading-none'>
+                                    <h1 className="text-xl lg:text-4xl text-orange-700 font-met font-semibold">CineMine</h1>
+                                    <p className='hidden lg:block font-met text-[#c4e5e9] pl-1 text-[13px] m-0'>Universe of Cinema </p>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
 
                         {/* Desctop UI Starts*/}
                         <div className="navbar-center hidden lg:flex ">
@@ -75,8 +78,8 @@ const NavBar = ({results, setResults}) => {
                                     <details>
                                         <summary className='text-2xl text-white/80 hover:text-orange-600'>Types</summary>
                                         <ul className="p-2 text-lg bg-black/20 backdrop-blur-md">
-                                            <li className='hover:text-orange-600'><a>Movies</a></li>
-                                            <li className='hover:text-orange-600'><a>Series</a></li>
+                                            <Link to="/"><li className='hover:text-orange-600'>Movies</li></Link>
+                                            <Link to="/series"><li className='hover:text-orange-600'>Series</li></Link>
                                         </ul>
                                     </details>
                                 </li>
