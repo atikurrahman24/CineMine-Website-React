@@ -35,7 +35,7 @@ const SearchBar = ({results, setResults}) => {
       </label>
 
       {/* Mobile UI */}
-      <div className="flex lg:hidden items-center">
+      <div className="lg:hidden items-center">
         {!showSearch && (
           <button
             onClick={() => setShowSearch(true)}
@@ -61,19 +61,19 @@ const SearchBar = ({results, setResults}) => {
         )}
 
         {showSearch && (
-          <label className="flex items-center bg-white/10 rounded-full px-3 py-1 w-3/4 border border-orange-600 transition duration-150">
+          <label className="flex items-center bg-white/10 rounded-full px-3 py-0 w-3/4 border border-orange-600 transition duration-150">
             <input
               type="search"
               required
               autoFocus
               placeholder="Search"
-              className="bg-transparent outline-none text-sm text-white placeholder-white/60 flex-1"
+              className="bg-transparent outline-none text-sm text-white placeholder-white/60"
               value={results}
               onChange={(event)=>setResults(event.target.value)}
             />
             <button
               onClick={() => setShowSearch(false)}
-              className="ml-1 text-white font-bold"
+              className="text-white font-bold -ml-15"  
             >
               ❌
             </button>

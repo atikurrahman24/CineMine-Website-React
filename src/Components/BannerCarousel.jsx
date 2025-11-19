@@ -19,7 +19,7 @@ export default function BannerCarousel() {
         }}
         speed={1000}
         loop={true}
-        className="mySwiper w-full h-[60vh] md:h-[70vh] lg:h-[90vh]"
+        className="mySwiper w-full h-[50vh] md:h-[60vh] lg:h-[80vh]"
       >
         {[...Array(totalSlides)].map((_, i) => (
           <SwiperSlide key={i}>

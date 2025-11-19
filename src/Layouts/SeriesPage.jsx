@@ -4,7 +4,9 @@ import Series from '../Components/Series'
 const SeriesPage = () => {
   return (
     <div>
-      <Series></Series>
+      <div className='mt-10'>
+        <Series></Series>
+      </div>
     </div>
   )
 }

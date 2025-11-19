@@ -1,141 +1,154 @@
 import { Link } from 'react-router'
 import SearchBar from './SearchBar'
+import { useRef } from 'react'
 
-const NavBar = ({results, setResults}) => {
+const NavBar = ({ results, setResults }) => {
+
+    // Refs for each dropdown
+    const typesRef = useRef(null);
+    const genresRef = useRef(null);
+    const industryRef = useRef(null);
+
+    // Close any dropdown dynamically
+    const closeDropdown = (ref) => {
+        if (ref?.current) {
+            ref.current.open = false;
+        }
+    };
+
     return (
         <div className="navbar shadow-md bg-black/40 backdrop-blur-md text-white font-mon fixed top-0 left-0 right-0 z-1000">
             <div className='lg:w-11/12 w-full mx-auto flex justify-between items-center'>
+
+                {/* Left Section */}
                 <div className="navbar-start font-met">
-                    {/* Mobile UI Starts*/}
-                    <div className="dropdown">
-                        <div tabIndex={0} role="button" className="lg:hidden ">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mx-1 hover:outline-1 hover:rounded-md" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+
+                    {/* Mobile Menu */}
+                    <div className="dropdown lg:hidden">
+                        <div tabIndex={0} role="button" className="lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
                         </div>
 
-                        <ul tabIndex="-1" className="menu menu-md dropdown-content bg-black/20 backdrop-blur-md rounded-box z-1 mt-3 w-40 p-2 shadow">
-                            {/* Short List 1 */}
+                        <ul className="menu menu-md dropdown-content bg-black/20 backdrop-blur-md rounded-box mt-3 w-40 p-2 shadow">
+
+                            {/* Types */}
                             <li>
-                                <details>
+                                <details ref={typesRef}>
                                     <summary>Types</summary>
                                     <ul className="p-2">
-                                        <li><a>Movies</a></li>
-                                        <li><a>Series</a></li>
+                                        <Link to="/movies" onClick={() => closeDropdown(typesRef)}>
+                                            <li className='hover:text-orange-600'>Movies</li>
+                                        </Link>
+                                        <Link to="/series" onClick={() => closeDropdown(typesRef)}>
+                                            <li className='hover:text-orange-600'>Series</li>
+                                        </Link>
                                     </ul>
                                 </details>
                             </li>
-                            {/* Short List 2 */}
+
+                            {/* Genres */}
                             <li>
-                                <details>
+                                <details ref={genresRef}>
                                     <summary>Genres</summary>
                                     <ul className="p-2">
-                                        <li><a>Action</a></li>
-                                        <li><a>Fantacy</a></li>
-                                        <li><a>Crime</a></li>
-                                        <li><a>Drama</a></li>
-                                        <li><a>Adventure</a></li>
-                                        <li><a>Sci-Fi</a></li>
-                                        <li><a>Comedy</a></li>
-                                        <li><a>Thriller</a></li>
-                                        <li><a>Romance</a></li>
-                                        <li><a>Biography</a></li>
+                                        {["Action", "Fantasy", "Crime", "Drama", "Adventure", "Sci-Fi", "Comedy", "Thriller", "Romance", "Biography"]
+                                            .map((g, i) => (
+                                                <li key={i} className='hover:text-orange-600'><a>{g}</a></li>
+                                            ))}
                                     </ul>
                                 </details>
                             </li>
-                            {/* Short List 3 */}
+
+                            {/* Industry */}
                             <li>
-                                <details>
+                                <details ref={industryRef}>
                                     <summary>Industry</summary>
                                     <ul className="p-2">
-                                        <li><a>Hollywood</a></li>
-                                        <li><a>Bollywood</a></li>
-                                        <li><a>MCU</a></li>
-                                        <li><a>DCEU</a></li>
-                                        <li><a>DCU</a></li>
+                                        {["Hollywood", "Bollywood", "MCU", "DCEU", "DCU"].map((i, index) => (
+                                            <li key={index} className='hover:text-orange-600'><a>{i}</a></li>
+                                        ))}
                                     </ul>
                                 </details>
                             </li>
+
                         </ul>
                     </div>
-                    {/* Mobile UI Ends*/}
 
+                    {/* Logo */}
                     <div className='flex items-center gap-20'>
                         <Link to="/">
-                            <div className='flex items-center justify-center gap-0 lg:gap-2 '>
-                                <img className='w-8 lg:w-18' src="/Logos/CM-Text-.png" alt="" />
+                            <div className='flex items-center gap-2'>
+                                <img className='w-7 lg:w-18' src="/Logos/CM-Text-.png" />
                                 <div className='flex flex-col leading-none'>
-                                    <h1 className="text-xl lg:text-4xl text-orange-700 font-met font-semibold">CineMine</h1>
-                                    <p className='hidden lg:block font-met text-[#c4e5e9] pl-1 text-[13px] m-0'>Universe of Cinema </p>
+                                    <h1 className="text-2xl lg:text-4xl text-orange-700 font-met font-semibold">CineMine</h1>
+                                    <p className='hidden lg:block font-met text-[#c4e5e9] pl-1 text-[13px]'>Universe of Cinema</p>
                                 </div>
                             </div>
                         </Link>
 
-                        {/* Desctop UI Starts*/}
-                        <div className="navbar-center hidden lg:flex ">
-                            {/* Center Items */}
+                        {/* Desktop Menu */}
+                        <div className="navbar-center hidden lg:flex">
                             <ul className="menu menu-horizontal px-1 flex gap-6">
-                                {/* Short List 1 */}
+
+                                {/* Types */}
                                 <li>
-                                    <details>
+                                    <details ref={typesRef}>
                                         <summary className='text-2xl text-white/80 hover:text-orange-600'>Types</summary>
                                         <ul className="p-2 text-lg bg-black/20 backdrop-blur-md">
-                                            <Link to="/"><li className='hover:text-orange-600'>Movies</li></Link>
-                                            <Link to="/series"><li className='hover:text-orange-600'>Series</li></Link>
+                                            <Link to="/movies" onClick={() => closeDropdown(typesRef)}>
+                                                <li className='hover:text-orange-600'>Movies</li>
+                                            </Link>
+                                            <Link to="/series" onClick={() => closeDropdown(typesRef)}>
+                                                <li className='hover:text-orange-600'>Series</li>
+                                            </Link>
                                         </ul>
                                     </details>
                                 </li>
-                                {/* Short List 2 */}
+
+                                {/* Genres */}
                                 <li>
-                                    <details>
+                                    <details ref={genresRef}>
                                         <summary className='text-2xl text-white/80 hover:text-orange-600'>Genres</summary>
                                         <ul className="p-2 text-lg bg-black/20 backdrop-blur-md">
-                                            <li className='hover:text-orange-600'><a>Action</a></li>
-                                            <li className='hover:text-orange-600'><a>Fantacy</a></li>
-                                            <li className='hover:text-orange-600'><a>Crime</a></li>
-                                            <li className='hover:text-orange-600'><a>Drama</a></li>
-                                            <li className='hover:text-orange-600'><a>Adventure</a></li>
-                                            <li className='hover:text-orange-600'><a>Sci-Fi</a></li>
-                                            <li className='hover:text-orange-600'><a>Comedy</a></li>
-                                            <li className='hover:text-orange-600'><a>Thriller</a></li>
-                                            <li className='hover:text-orange-600'><a>Romance</a></li>
-                                            <li className='hover:text-orange-600'><a>Biography</a></li>
+                                            {["Action", "Fantasy", "Crime", "Drama", "Adventure", "Sci-Fi", "Comedy", "Thriller", "Romance", "Biography"]
+                                                .map((g, i) => (
+                                                    <li key={i} className='hover:text-orange-600'><a>{g}</a></li>
+                                                ))}
                                         </ul>
                                     </details>
                                 </li>
-                                {/* Short List 3 */}
+
+                                {/* Industry */}
                                 <li>
-                                    <details className='text-2xl text-white/80'>
+                                    <details ref={industryRef}>
                                         <summary className='text-2xl text-white/80 hover:text-orange-600'>Industry</summary>
                                         <ul className="p-2 text-lg bg-black/20 backdrop-blur-md">
-                                            <li className='hover:text-orange-600'><a>Hollywood</a></li>
-                                            <li className='hover:text-orange-600'><a>Bollywood</a></li>
-                                            <li className='hover:text-orange-600'><a>MCU</a></li>
-                                            <li className='hover:text-orange-600'><a>DCEU</a></li>
-                                            <li className='hover:text-orange-600'><a>DCU</a></li>
+                                            {["Hollywood", "Bollywood", "MCU", "DCEU", "DCU"].map((i, index) => (
+                                                <li key={index} className='hover:text-orange-600'><a>{i}</a></li>
+                                            ))}
                                         </ul>
                                     </details>
                                 </li>
+
                             </ul>
                         </div>
-                        {/* Desctop UI Ends*/}
-                    </div>
 
+                    </div>
                 </div>
 
-                {/* Right Side items Starts */}
+                {/* Right Side */}
                 <div className="navbar-end">
-                    <div className='flex items-center gap-1 lg:gap-4 '>
-                        {/* Search Box*/}
-                        <SearchBar results={results} setResults={setResults}></SearchBar>
-                        {/* Avatar  */}
-                        <div className="avatar ">
-                            <div className="w-7 lg:w-10 rounded-full">
-                                <img className='' src="/Logos/CM-Circle.png" />
+                    <div className='flex items-center gap-4'>
+                        <SearchBar results={results} setResults={setResults} />
+                        <div className="avatar">
+                            <div className="w-6 lg:w-10 rounded-full">
+                                <img src="/Logos/CM-Circle.png" />
                             </div>
                         </div>
-
                     </div>
                 </div>
-                {/* Right Side items Ends */}
 
             </div>
         </div>

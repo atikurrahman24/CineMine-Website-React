@@ -37,7 +37,7 @@ const FeaturedSlide = ({ movies }) => {
           .filter(movie => movie.rating > 7)
           .map(movie => (
             <div key={movie.id} className='p-2 '>
-              <div className='bg-[#085e6483] w-50 font-mon border border-gray-700 rounded-2xl py-3 transition-transform duration-300 hover:scale-105'>
+              <div className='bg-[#0f3c4183] w-50 font-mon border border-gray-700 rounded-2xl py-3 transition-transform duration-300 hover:scale-105'>
 
                 <img src={movie.card_picture} alt={movie.title} className='h-40 md:h-40 lg:h-50 mx-auto object-contain rounded-lg' />
                 <div className='py-1 flex flex-col gap-1 px-2'>

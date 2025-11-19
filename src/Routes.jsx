@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router";
 import Roots from "./Roots";
 import SeriesPage from "./Layouts/SeriesPage";
 import Home from "./Layouts/Home";
+import MoviesPage from "./Layouts/MoviesPage";
 
 const router = createBrowserRouter([
     {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
             {
                 path:'/series',
                 element:<SeriesPage></SeriesPage>
+            },
+            {
+                path:'/movies',
+                element:<MoviesPage></MoviesPage>
             }
         ]
     }
