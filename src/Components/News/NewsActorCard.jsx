@@ -18,8 +18,8 @@ const NewsMovieCard = ({ data }) => {
                             </div>
                             <img src={item.cover_picture} className='h-full rounded-lg' alt="" style={{ width: "80%",maskImage: "linear-gradient(to right, transparent, black)", WebkitMaskImage: "linear-gradient(to right, transparent, black)"}}/>
                             <div className='absolute bottom-2 left-2 right-2 flex justify-between'>
-                                <p className='text-sm py-1 px-2 bg-orange-600/90 rounded-md font-semibold'>Remind Me</p>
-                                <p className='text-sm py-1 px-2 border border-orange-600 bg-black/70 rounded-md font-semibold'>learn more...</p>
+                                <p className='text-sm py-1 px-2 border border-green-600/70 bg-black/70 rounded-md font-semibold'>learn more...</p>
+                                <p className='text-sm py-1 px-2 bg-green-600/60 rounded-md font-semibold'>Remind Me</p>
                             </div>
 
                         </div>

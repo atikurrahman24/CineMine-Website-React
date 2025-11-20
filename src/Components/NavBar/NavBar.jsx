@@ -35,17 +35,15 @@ const NavBar = ({ results, setResults }) => {
 
                             {/* Types */}
                             <li>
-                                <details ref={typesRef}>
-                                    <summary>Types</summary>
-                                    <ul className="p-2">
-                                        <Link to="/movies" onClick={() => closeDropdown(typesRef)}>
-                                            <li className='hover:text-orange-600'>Movies</li>
-                                        </Link>
-                                        <Link to="/series" onClick={() => closeDropdown(typesRef)}>
-                                            <li className='hover:text-orange-600'>Series</li>
-                                        </Link>
-                                    </ul>
-                                </details>
+                               <Link to="/" >
+                                    <li className=' text-white/80 hover:text-orange-600 '>Home</li>
+                                </Link>
+                                <Link to="/movies" >
+                                    <li className=' text-white/80 hover:text-orange-600 '>Movies</li>
+                                </Link>
+                                <Link to="/series">
+                                    <li className=' text-white/80 hover:text-orange-600'>Series</li>
+                                </Link>
                             </li>
 
                             {/* Genres */}
@@ -90,22 +88,19 @@ const NavBar = ({ results, setResults }) => {
 
                         {/* Desktop Menu */}
                         <div className="navbar-center hidden lg:flex">
-                            <ul className="menu menu-horizontal px-1 flex gap-6">
+                            <ul className="menu menu-horizontal px-1 flex items-center gap-10">
 
-                                {/* Types */}
-                                <li>
-                                    <details ref={typesRef}>
-                                        <summary className='text-2xl text-white/80 hover:text-orange-600'>Types</summary>
-                                        <ul className="p-2 text-lg bg-black/20 backdrop-blur-md">
-                                            <Link to="/movies" onClick={() => closeDropdown(typesRef)}>
-                                                <li className='hover:text-orange-600'>Movies</li>
-                                            </Link>
-                                            <Link to="/series" onClick={() => closeDropdown(typesRef)}>
-                                                <li className='hover:text-orange-600'>Series</li>
-                                            </Link>
-                                        </ul>
-                                    </details>
-                                </li>
+                               
+                                <Link to="/" >
+                                    <li className='text-2xl text-white/80 hover:text-orange-600 '>Home</li>
+                                </Link>
+                                <Link to="/movies" >
+                                    <li className='text-2xl text-white/80 hover:text-orange-600 '>Movies</li>
+                                </Link>
+                                <Link to="/series">
+                                    <li className='text-2xl text-white/80 hover:text-orange-600'>Series</li>
+                                </Link>
+
 
                                 {/* Genres */}
                                 <li>

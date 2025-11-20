@@ -31,7 +31,7 @@ const NewsGalary = () => {
     }, []);
 
     return (
-        <div className='flex flex-col py-12 w-11/12 mx-auto'>
+        <div className='flex flex-col py-12 w-11/12 mx-auto '>
 
             {/* Upcoming Movies */}
             <div>
@@ -41,7 +41,7 @@ const NewsGalary = () => {
                     <div className="flex justify-center mt-10">
                         <button
                             onClick={() => setShowAllMovies(!showAllMovies)}
-                            className="px-2 lg:px-3 py-1 text-xs lg:text-sm bg-orange-600 text-white rounded-lg hover:bg-blue-700 transition"
+                            className="font-met px-6 py-2 bg-orange-600 text-white rounded-full hover:bg-blue-700 transition"
                         >
                             {showAllMovies ? 'Show Less' : 'Show More'}
                         </button>
@@ -57,7 +57,7 @@ const NewsGalary = () => {
                     <div className="flex justify-center mt-10">
                         <button
                             onClick={() => setShowAllSeries(!showAllSeries)}
-                            className="px-2 lg:px-3 py-1 text-xs lg:text-sm bg-orange-600 text-white rounded-lg hover:bg-blue-700 transition"
+                            className="font-met px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-orange-700 transition"
                         >
                             {showAllSeries ? 'Show Less' : 'Show More'}
                         </button>
@@ -73,7 +73,7 @@ const NewsGalary = () => {
                     <div className="flex justify-center mt-10">
                         <button
                             onClick={() => setShowAllActors(!showAllActors)}
-                            className="px-2 lg:px-3 py-1 text-xs lg:text-sm bg-orange-600 text-white rounded-lg hover:bg-blue-700 transition"
+                            className="font-met px-6 py-2 bg-green-600 text-white rounded-full hover:bg-purple-700 transition"
                         >
                             {showAllActors ? 'Show Less' : 'Show More'}
                         </button>
@@ -89,7 +89,7 @@ const NewsGalary = () => {
                     <div className="flex justify-center mt-10">
                         <button
                             onClick={() => setShowAllDirectors(!showAllDirectors)}
-                            className="px-2 lg:px-3 py-1 lg-py-2 text-xs lg:text-sm bg-orange-600 text-white rounded-lg hover:bg-blue-700 transition"
+                            className="font-met px-6 py-2 bg-purple-600 text-white rounded-full hover:bg-green-700 transition"
                         >
                             {showAllDirectors ? 'Show Less' : 'Show More'}
                         </button>
