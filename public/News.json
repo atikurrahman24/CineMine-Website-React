@@ -1,0 +1,362 @@
+[
+  {
+    "id": "news_001",
+    "title": "Quantum Blaze",
+    "description": "Marvel introduces 'Quantum Blaze', a Hollywood superhero film about manipulating quantum fire across multiverses.",
+    "release_date": "2026-03-18",
+    "industry": "Hollywood",
+    "cover_picture": "https://i.ibb.co.com/03CwjVK/quantum-blaze.jpg",
+    "types": "upcoming-movie"
+  },
+  {
+    "id": "news_002",
+    "title": "Avatar 3 Teaser Released",
+    "description": "James Cameron releases the teaser for 'Avatar 3', promising epic visuals and continuation of Pandora’s story.",
+    "release_date": "2026-12-15",
+    "industry": "Hollywood",
+    "cover_picture": "https://i.ibb.co.com/zWXmXnCx/avatar3.jpg",
+    "types": "upcoming-movie"
+  },
+  {
+    "id": "news_003",
+    "title": "Pathaan 2 Coming Soon",
+    "description": "Shah Rukh Khan returns in Bollywood’s 'Pathaan 2', the spy action sequel directed by Siddharth Anand.",
+    "release_date": "2026-11-05",
+    "industry": "Bollywood",
+    "cover_picture": "https://i.ibb.co.com/9HrYvzdC/pathan2.jpg",
+    "types": "upcoming-movie"
+  },
+  {
+    "id": "news_004",
+    "title": "Moana Live-Action Remake",
+    "description": "Disney’s Hollywood live-action remake of 'Moana', starring Catherine Laga'aia and Dwayne Johnson.",
+    "release_date": "2026-07-10",
+    "industry": "Hollywood",
+    "cover_picture": "https://i.ibb.co.com/1G1FG1rK/moana.jpg",
+    "types": "upcoming-movie"
+  },
+  {
+    "id": "news_005",
+    "title": "Kantara 2",
+    "description": "Kannada blockbuster 'Kantara' gets a sequel continuing the folklore-based action drama.",
+    "release_date": "2026-12-12",
+    "industry": "Indian",
+    "cover_picture": "https://i.ibb.co.com/pBkDmf2z/kantara2.jpg",
+    "types": "upcoming-movie"
+  },
+  {
+    "id": "news_006",
+    "title": "Shakib Khan: Action Hero",
+    "description": "Bangladeshi superstar Shakib Khan stars in a new action drama directed by Himel Ashraf.",
+    "release_date": "2026-09-10",
+    "industry": "Bangla",
+    "cover_picture": "https://i.ibb.co.com/xqn8qyVg/actionhero.jpg",
+    "types": "upcoming-movie"
+  },
+  {
+    "id": "news_007",
+    "title": "RRR Hindi Dub Release",
+    "description": "S.S. Rajamouli’s blockbuster 'RRR' releases in Hindi dub with extra scenes for Bollywood audiences.",
+    "release_date": "2026-04-14",
+    "industry": "Bollywood",
+    "cover_picture": "https://i.ibb.co.com/pjhRxQW5/rrrhindi.jpg",
+    "types": "upcoming-movie"
+  },
+  {
+    "id": "news_008",
+    "title": "Doctor Strange 3",
+    "description": "Marvel Studios’ 'Doctor Strange 3', exploring multiverse chaos and new villains starring Benedict Cumberbatch.",
+    "release_date": "2026-11-22",
+    "industry": "Hollywood",
+    "cover_picture": "https://i.ibb.co.com/q3wv5nkh/doctorstrange.jpg",
+    "types": "upcoming-movie"
+  },
+  {
+    "id": "news_009",
+    "title": "Bhaijaan Returns",
+    "description": "Bangladeshi action entertainer 'Bhaijaan Returns' starring Shakib Khan to release in Eid 2026.",
+    "release_date": "2026-04-21",
+    "industry": "Bangla",
+    "cover_picture": "https://i.ibb.co.com/4nv5hqr8/bhaijanreturn.jpg",
+    "types": "upcoming-movie"
+  },
+  {
+    "id": "news_010",
+    "title": "RRR 2",
+    "description": "Indian Telugu blockbuster 'RRR' sequel continues the revolutionary action drama, directed by S.S. Rajamouli.",
+    "release_date": "2026-12-25",
+    "industry": "Indian",
+    "cover_picture": "https://i.ibb.co.com/ch84xJqR/RRR2.jpg",
+    "types": "upcoming-movie"
+  },
+  {
+    "id": "news_011",
+    "title": "A Knight of the Seven Kingdoms",
+    "description": "Game of Thrones prequel based on George R.R. Martin’s ‘Tales of Dunk and Egg’, following Ser Duncan the Tall and his young squire Egg.",
+    "release_date": "2026-01-18",
+    "industry": "Hollywood",
+    "cover_picture": "https://i.ibb.co.com/s9WjnwHC/s1.jpg",
+    "types": "upcoming-series"
+  },
+  {
+    "id": "news_012",
+    "title": "Paatal Lok Season 3",
+    "description": "Amazon Prime’s crime thriller 'Paatal Lok' returns with a new season, exploring deeper layers of crime and corruption in India.",
+    "release_date": "2026-08-20",
+    "industry": "Bollywood",
+    "cover_picture": "https://i.ibb.co.com/Kp4rjx6g/s2.jpg",
+    "types": "upcoming-series"
+  },
+  {
+    "id": "news_013",
+    "title": "Mirzapur Season 4",
+    "description": "Amazon Prime India confirms 'Mirzapur' Season 4, with new actors joining the crime-drama series.",
+    "release_date": "2026-10-01",
+    "industry": "Bollywood",
+    "cover_picture": "https://i.ibb.co.com/4n3tYqg0/s3.jpg",
+    "types": "upcoming-series"
+  },
+  {
+    "id": "news_014",
+    "title": "Cobra Kai Season 8",
+    "description": "Netflix announces 'Cobra Kai' Season 8, continuing the Karate saga across generations.",
+    "release_date": "2026-07-18",
+    "industry": "Hollywood",
+    "cover_picture": "https://i.ibb.co.com/MxVXT8Qc/s4.jpg",
+    "types": "upcoming-series"
+  },
+  {
+    "id": "news_015",
+    "title": "Love Story (American Love Story)",
+    "description": "A romance anthology series about JFK Jr. and Carolyn Bessette, part of Ryan Murphy’s American Story franchise.",
+    "release_date": "2026-02-15",
+    "industry": "Hollywood",
+    "cover_picture": "https://i.ibb.co.com/PG8qG6S6/s5.jpg",
+    "types": "upcoming-series"
+  },
+  {
+    "id": "news_016",
+    "title": "Trinity",
+    "description": "Netflix political thriller about a naval commander and Secretary of Defence trapped in a conspiracy, starring Richard Madden & Gugu Mbatha‑Raw.",
+    "release_date": "2026-03-20",
+    "industry": "Hollywood",
+    "cover_picture": "https://i.ibb.co.com/Q3979dkP/s6.jpgg",
+    "types": "upcoming-series"
+  },
+  {
+    "id": "news_017",
+    "title": "Elle",
+    "description": "Prequel series to Legally Blonde, exploring Elle Woods’ teenage years in the 1990s as a high school student.",
+    "release_date": "2026-06-10",
+    "industry": "Hollywood",
+    "cover_picture": "https://i.ibb.co.com/B25qT1qs/s7.jpg",
+    "types": "upcoming-series"
+  },
+  {
+    "id": "news_018",
+    "title": "The Altruists",
+    "description": "Netflix limited drama about Sam Bankman‑Fried and Caroline Ellison trying to reinvent the global financial system, but caught in fraud.",
+    "release_date": "2026-09-05",
+    "industry": "Hollywood",
+    "cover_picture": "https://i.ibb.co.com/zTx4qPK8/s8.jpg",
+    "types": "upcoming-series"
+  },
+  {
+    "id": "news_019",
+    "title": "Wonder Man",
+    "description": "A Marvel series about Simon Williams, a superpowered actor and stuntman, starring Yahya Abdul‑Mateen II and Ben Kingsley.",
+    "release_date": "2026-01-27",
+    "industry": "Hollywood",
+    "cover_picture": "https://i.ibb.co.com/qM49GQZC/s9.jpg",
+    "types": "upcoming-series"
+  },
+  {
+    "id": "news_020",
+    "title": "Daredevil: Born Again Season 2",
+    "description": "The second season of Marvel’s ‘Daredevil: Born Again’, featuring returns of Matt Murdock, Kingpin, and Jessica Jones.",
+    "release_date": "2026-03-02",
+    "industry": "Hollywood",
+    "cover_picture": "https://i.ibb.co.com/r29Dgjp7/s10.jpg",
+    "types": "upcoming-series"
+  },
+  {
+    "id": "news_021",
+    "title": "Shah Rukh Khan",
+    "description": "SRK is back with 'Pathaan 2', the Bollywood action-spy thriller, directed by Siddharth Anand.",
+    "release_date": "2026-11-05",
+    "industry": "Bollywood",
+    "cover_picture": "https://i.ibb.co.com/D2LfY7M/srk.jpg",
+    "types": "actor"
+  },
+  {
+    "id": "news_022",
+    "title": "Shakib Khan",
+    "description": "Bangladeshi superstar Shakib Khan stars in a new action-drama directed by Himel Ashraf.",
+    "release_date": "2026-09-10",
+    "industry": "Bangla",
+    "cover_picture": "https://i.ibb.co.com/vCdqVcbF/sakib.jpg",
+    "types": "actor"
+  },
+  {
+    "id": "news_023",
+    "title": "Robert Downey Jr.",
+    "description": "Returning as Doctor Doom in 'Avengers: Doomsday', Marvel’s upcoming superhero blockbuster.",
+    "release_date": "2026-05-01",
+    "industry": "Hollywood",
+    "cover_picture": "https://i.ibb.co.com/jkLLB7K0/rdj.jpg",
+    "types": "actor"
+  },
+  {
+    "id": "news_024",
+    "title": "Deepika Padukone",
+    "description": "Bollywood’s Deepika Padukone to star in an upcoming romantic drama directed by Karan Johar.",
+    "release_date": "2026-07-10",
+    "industry": "Bollywood",
+    "cover_picture": "https://i.ibb.co.com/MyDYGpRv/Deepika.jpg",
+    "types": "actor"
+  },
+  {
+    "id": "news_025",
+    "title": "Chris Hemsworth",
+    "description": "Hollywood star Chris Hemsworth set to appear in a new sci-fi thriller, exploring interdimensional travel.",
+    "release_date": "2026-03-20",
+    "industry": "Hollywood",
+    "cover_picture": "https://i.ibb.co.com/R4gFwHtW/hemsworth.jpg",
+    "types": "actor"
+  },
+  {
+    "id": "news_026",
+    "title": "Kangana Ranaut",
+    "description": "Bollywood actress Kangana Ranaut will star in and direct a social drama in 2026.",
+    "release_date": "2026-05-05",
+    "industry": "Bollywood",
+    "cover_picture": "https://i.ibb.co.com/DgS5GTt4/Kangna.jpg",
+    "types": "actor"
+  },
+  {
+    "id": "news_027",
+    "title": "Amitabh Bachchan",
+    "description": "Legendary Bollywood actor Amitabh Bachchan to feature in a mystery-thriller film releasing in 2026.",
+    "release_date": "2026-08-01",
+    "industry": "Bollywood",
+    "cover_picture": "https://i.ibb.co.com/9mPMBx0M/Amitabh-Bachchan.jpg",
+    "types": "actor"
+  },
+  {
+    "id": "news_028",
+    "title": "Zendaya",
+    "description": "Hollywood actress Zendaya starring in a teen sci-fi series adaptation, expected to release in 2026.",
+    "release_date": "2026-06-15",
+    "industry": "Hollywood",
+    "cover_picture": "https://i.ibb.co.com/Xk3SnBYs/zendaya.jpg",
+    "types": "actor"
+  },
+  {
+    "id": "news_029",
+    "title": "Yash",
+    "description": "Kannada star Yash to appear in a sequel to the blockbuster 'KGF', directed by Prashanth Neel.",
+    "release_date": "2026-12-10",
+    "industry": "Indian",
+    "cover_picture": "https://i.ibb.co.com/5Wt1pXRB/Yash.jpg",
+    "types": "actor"
+  },
+  {
+    "id": "news_030",
+    "title": "Priyanka Chopra",
+    "description": "Priyanka Chopra Jonas starring in a Hollywood action-thriller alongside Chris Hemsworth.",
+    "release_date": "2026-09-25",
+    "industry": "Hollywood",
+    "cover_picture": "https://i.ibb.co.com/4RrchLhB/Priyanka.jpg",
+    "types": "actor"
+  },
+  {
+    "id": "news_031",
+    "title": "S.S. Rajamouli",
+    "description": "The visionary director of 'RRR' and 'Baahubali' is set to helm a new epic action-drama in 2026.",
+    "release_date": "2026-12-15",
+    "industry": "Indian",
+    "cover_picture": "https://i.ibb.co.com/YFy9TKwf/Rajamouli.jpg",
+    "types": "director"
+  },
+  {
+    "id": "news_032",
+    "title": "James Cameron",
+    "description": "Hollywood director James Cameron prepares 'Avatar 3' for a spectacular 2026 release.",
+    "release_date": "2026-12-15",
+    "industry": "Hollywood",
+    "cover_picture": "https://i.ibb.co.com/nsG7P70P/James-Cameron.jpg",
+    "types": "director"
+  },
+  {
+    "id": "news_033",
+    "title": "Siddharth Anand",
+    "description": "Bollywood action filmmaker Siddharth Anand returns with 'Pathaan 2', starring Shah Rukh Khan.",
+    "release_date": "2026-11-05",
+    "industry": "Bollywood",
+    "cover_picture": "https://i.ibb.co.com/tTWhS42F/siddharthanand.jpg",
+    "types": "director"
+  },
+  {
+    "id": "news_034",
+    "title": "Himel Ashraf",
+    "description": "Bangladeshi director Himel Ashraf directs a new Shakib Khan action-drama releasing in Eid 2026.",
+    "release_date": "2026-09-10",
+    "industry": "Bangla",
+    "cover_picture": "https://i.ibb.co.com/j95tV14T/himel-ashraf.jpg",
+    "types": "director"
+  },
+  {
+    "id": "news_035",
+    "title": "Christopher Nolan",
+    "description": "Hollywood master Christopher Nolan is back with a new sci-fi thriller exploring time loops.",
+    "release_date": "2026-10-22",
+    "industry": "Hollywood",
+    "cover_picture": "https://i.ibb.co.com/6cbVqFRS/Christopher-Nolan.jpg",
+    "types": "director"
+  },
+  {
+    "id": "news_036",
+    "title": "Karan Johar",
+    "description": "Bollywood director Karan Johar announces a romantic drama starring Deepika Padukone.",
+    "release_date": "2026-07-10",
+    "industry": "Bollywood",
+    "cover_picture": "https://i.ibb.co.com/LhvwSTbx/Karan-Johar-s.jpg",
+    "types": "director"
+  },
+  {
+    "id": "news_037",
+    "title": "Prashanth Neel",
+    "description": "Kannada director Prashanth Neel to direct the sequel of blockbuster 'KGF', starring Yash.",
+    "release_date": "2026-12-10",
+    "industry": "Indian",
+    "cover_picture": "https://i.ibb.co.com/YT4MR800/Prashanth-Neel.jpg",
+    "types": "director"
+  },
+  {
+    "id": "news_038",
+    "title": "Taika Waititi",
+    "description": "Hollywood director Taika Waititi is set to helm a quirky superhero-comedy movie in 2026.",
+    "release_date": "2026-08-18",
+    "industry": "Hollywood",
+    "cover_picture": "https://i.ibb.co.com/VWHgTvJb/takia.jpg",
+    "types": "director"
+  },
+  {
+    "id": "news_039",
+    "title": "Zoya Akhtar",
+    "description": "Bollywood filmmaker Zoya Akhtar announces a web-series exploring the lives of musicians in Mumbai.",
+    "release_date": "2026-09-25",
+    "industry": "Bollywood",
+    "cover_picture": "https://i.ibb.co.com/TqRpsGBc/zoya.jpg",
+    "types": "director"
+  },
+  {
+    "id": "news_040",
+    "title": "Quentin Tarantino",
+    "description": "Hollywood legend Quentin Tarantino to direct his next crime-thriller with a star-studded ensemble.",
+    "release_date": "2026-11-15",
+    "industry": "Hollywood",
+    "cover_picture": "https://i.ibb.co.com/svwRB4z4/Quentin-Tarantino.jpg",
+    "types": "director"
+  }
+]

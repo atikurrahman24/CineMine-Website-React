@@ -1,6 +1,3 @@
-import { FaEye, FaStarHalfAlt } from "react-icons/fa";
-import { FaHeartCircleCheck } from 'react-icons/fa6';
-import { IoMdArrowDropright } from "react-icons/io";
 
 const SearchResults = ({ results = "", movies = [] }) => {
 
