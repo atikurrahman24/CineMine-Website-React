@@ -5,6 +5,7 @@ import SeriesPage from "./Layouts/SeriesPage";
 import MoviesPage from "./Layouts/MoviesPage";
 import About from "./Layouts/About";
 import Contact from "./Layouts/Contact";
+import Details from "./Layouts/Details";
 
 const router = createBrowserRouter([
     {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
             {
                 path:'/contact',
                 element:<Contact></Contact>
+            },
+            {
+                path:'/details/:id',
+                element:<Details></Details>
             }
         ]
     }
