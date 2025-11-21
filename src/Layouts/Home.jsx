@@ -11,7 +11,7 @@ const Home = () => {
       <Toaster position='top-right'></Toaster>
       <NavBar></NavBar>
       <BannerCarousel></BannerCarousel>
-      <main className="bg-[url('/Banners/banner13.jpg')] bg-black/80 bg-blend-overlay bg-cover">
+      <main className="bg-[url('/Banners/banner3.jpg')] bg-black/80 bg-blend-overlay bg-cover">
         <NewsGalary></NewsGalary>
       </main>
       <footer>
