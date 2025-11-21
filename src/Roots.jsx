@@ -1,13 +1,13 @@
-import React from 'react'
-import Home from './Layouts/Home'
 import { Outlet } from 'react-router'
 import NavBar from './Components/NavBar/NavBar'
+import Footer from './Components/Footer'
 
 const Roots = () => {
   return (
     <div>
         <NavBar></NavBar>
         <Outlet></Outlet>
+        <Footer></Footer>
     </div>
   )
 }

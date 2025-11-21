@@ -6,3 +6,15 @@
 .animate-spin-slow {
   animation: spin-slow 4s linear infinite;
 }
+.avatar img {
+  box-shadow: 0 0 10px rgba(255,165,0,0.5);
+  transition: box-shadow 0.3s;
+}
+
+.avatar img:hover {
+  box-shadow: 0 0 20px rgba(255,165,0,0.8); 
+}
+
+.animate-spin-slow:hover {
+  animation-play-state: paused;
+}

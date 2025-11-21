@@ -1,10 +1,13 @@
-import { Link } from 'react-router';
+import { NavLink } from 'react-router-dom'; // <-- change from Link
 import { FaCircleUser } from "react-icons/fa6";
 import '../../App.css';
 
 const NavBar = () => {
 
     const genres = ["Action", "Fantasy", "Crime", "Drama", "Adventure", "Sci-Fi", "Comedy", "Thriller", "Romance", "Biography"];
+
+    const activeClass = "text-orange-600";  // active button
+    const normalClass = "text-white/80 hover:text-orange-600";  // normal button
 
     return (
         <div className="navbar shadow-md bg-black/40 backdrop-blur-md text-white font-mon fixed top-0 left-0 right-0 z-1000">
@@ -24,10 +27,9 @@ const NavBar = () => {
                         </div>
 
                         <ul className="menu menu-md dropdown-content bg-black/20 backdrop-blur-md rounded-box mt-3 w-40 p-2 shadow">
-
-                            <Link to="/" ><li className='text-white/80 hover:text-orange-600'>Home</li></Link>
-                            <Link to="/movies"><li className='text-white/80 hover:text-orange-600'>Movies</li></Link>
-                            <Link to="/series"><li className='text-white/80 hover:text-orange-600'>Series</li></Link>
+                            <NavLink to="/" className={({isActive}) => isActive ? activeClass : normalClass}><li>Home</li></NavLink>
+                            <NavLink to="/movies" className={({isActive}) => isActive ? activeClass : normalClass}><li>Movies</li></NavLink>
+                            <NavLink to="/series" className={({isActive}) => isActive ? activeClass : normalClass}><li>Series</li></NavLink>
 
                             <li>
                                 <details>
@@ -40,15 +42,14 @@ const NavBar = () => {
                                 </details>
                             </li>
 
-                            <Link to="/about"><li className='text-white/80 hover:text-orange-600'>About</li></Link>
-                            <Link to="/contact"><li className='text-white/80 hover:text-orange-600'>Contact</li></Link>
-
+                            <NavLink to="/about" className={({isActive}) => isActive ? activeClass : normalClass}><li>About</li></NavLink>
+                            <NavLink to="/contact" className={({isActive}) => isActive ? activeClass : normalClass}><li>Contact</li></NavLink>
                         </ul>
                     </div>
 
                     {/* Logo + Desktop Menu */}
                     <div className='flex items-center gap-20'>
-                        <Link to="/">
+                        <NavLink to="/">
                             <div className='flex items-center gap-2'>
                                 <img className='w-7 lg:w-18' src="/Logos/CM-Text-.png" />
                                 <div className='flex flex-col leading-none'>
@@ -56,19 +57,18 @@ const NavBar = () => {
                                     <p className='hidden lg:block font-met text-[#c4e5e9] pl-1 text-[13px]'>Universe of Cinema</p>
                                 </div>
                             </div>
-                        </Link>
+                        </NavLink>
 
                         {/* Desktop Menu */}
                         <div className="navbar-center hidden lg:flex">
                             <ul className="menu menu-horizontal px-1 flex items-center gap-10">
-
-                                <Link to="/" ><li className='text-2xl text-white/80 hover:text-orange-600'>Home</li></Link>
-                                <Link to="/movies"><li className='text-2xl text-white/80 hover:text-orange-600'>Movies</li></Link>
-                                <Link to="/series"><li className='text-2xl text-white/80 hover:text-orange-600'>Series</li></Link>
+                                <NavLink to="/" className={({isActive}) => isActive ? activeClass : normalClass}><li className='text-2xl'>Home</li></NavLink>
+                                <NavLink to="/movies" className={({isActive}) => isActive ? activeClass : normalClass}><li className='text-2xl'>Movies</li></NavLink>
+                                <NavLink to="/series" className={({isActive}) => isActive ? activeClass : normalClass}><li className='text-2xl'>Series</li></NavLink>
 
                                 <li>
                                     <details>
-                                        <summary className='text-2xl text-white/80 hover:text-orange-600'>Genres</summary>
+                                        <summary className='text-2xl hover:text-orange-600'>Genres</summary>
                                         <ul className="p-2 text-lg bg-black/20 backdrop-blur-md">
                                             {genres.map((g, i) => (
                                                 <li key={i} className='hover:text-orange-600'><a>{g}</a></li>
@@ -77,12 +77,10 @@ const NavBar = () => {
                                     </details>
                                 </li>
 
-                                <Link to="/about"><li className='text-2xl text-white/80 hover:text-orange-600'>About</li></Link>
-                                <Link to="/contact"><li className='text-2xl text-white/80 hover:text-orange-600'>Contact</li></Link>
-
+                                <NavLink to="/about" className={({isActive}) => isActive ? activeClass : normalClass}><li className='text-2xl'>About</li></NavLink>
+                                <NavLink to="/contact" className={({isActive}) => isActive ? activeClass : normalClass}><li className='text-2xl'>Contact</li></NavLink>
                             </ul>
                         </div>
-
                     </div>
                 </div>
 
@@ -99,8 +97,6 @@ const NavBar = () => {
                                 <img src="/Logos/CM-Circle.png" className="rounded-full" />
                             </div>
                         </div>
-
-
                     </div>
                 </div>
 

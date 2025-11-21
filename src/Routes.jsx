@@ -1,8 +1,10 @@
 import { createBrowserRouter } from "react-router";
 import Roots from "./Roots";
-import SeriesPage from "./Layouts/SeriesPage";
 import Home from "./Layouts/Home";
+import SeriesPage from "./Layouts/SeriesPage";
 import MoviesPage from "./Layouts/MoviesPage";
+import About from "./Layouts/About";
+import Contact from "./Layouts/Contact";
 
 const router = createBrowserRouter([
     {
@@ -20,6 +22,14 @@ const router = createBrowserRouter([
             {
                 path:'/movies',
                 element:<MoviesPage></MoviesPage>
+            },
+            {
+                path:'/about',
+                element:<About></About>
+            },
+            {
+                path:'/contact',
+                element:<Contact></Contact>
             }
         ]
     }
