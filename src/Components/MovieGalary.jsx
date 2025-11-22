@@ -4,8 +4,9 @@ import toast from 'react-hot-toast';
 import MovieCard from './MovieCard';
 import FeaturedSlide from './FeaturedSlide';
 import SearchResults from '../Components/SearchResults'
+import NavBar from '../Components/NavBar/NavBar'
 
-const MovieGalary = ({ results }) => {
+const MovieGalary = ({ results, setResults }) => {
   const [movies, setMovies] = useState([]);
 
   // A loading theme when fetching movies data
@@ -39,7 +40,7 @@ const MovieGalary = ({ results }) => {
   return (
     <div className="bg-[url('/Banners/banner10.jpg')] bg-black/80 bg-blend-overlay bg-cover">
       <div className="w-11/12 mx-auto ">
-
+        <NavBar results={results} setResults={setResults}></NavBar>
         {/* Search results  */}
         <SearchResults results={results} movies={movies} ></SearchResults>
 

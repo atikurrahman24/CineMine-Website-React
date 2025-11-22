@@ -2,6 +2,7 @@ import React from 'react'
 import MovieGalary from '../Components/MovieGalary'
 
 
+
 const MoviesPage = () => {
   return (
     <div>

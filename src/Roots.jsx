@@ -1,11 +1,10 @@
 import { Outlet } from 'react-router'
-import NavBar from './Components/NavBar/NavBar'
+import NavBar from './Components/NavBar/NavLogBar'
 import Footer from './Components/Footer'
 
 const Roots = () => {
   return (
     <div>
-        <NavBar></NavBar>
         <Outlet></Outlet>
         <Footer></Footer>
     </div>

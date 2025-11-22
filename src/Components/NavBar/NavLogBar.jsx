@@ -1,8 +1,8 @@
 import { NavLink } from 'react-router-dom';
+import { FaCircleUser } from "react-icons/fa6";
 import '../../App.css';
-import SearchBar from './SearchBar';
 
-const NavBar = ({results,setResults}) => {
+const NavLogBar = () => {
 
     const genres = ["Action", "Fantasy", "Crime", "Drama", "Adventure", "Sci-Fi", "Comedy", "Thriller", "Romance", "Biography"];
 
@@ -87,9 +87,11 @@ const NavBar = ({results,setResults}) => {
                 {/* Right Side */}
                 <div className="navbar-end">
                     <div className='flex items-center gap-0 lg:gap-4'>
-                        {/* Search Box*/}
-                        <SearchBar results={results} setResults={setResults}></SearchBar>
-                        {/* Avatar  */}
+                        <button className="flex items-center gap-2 px-3 py-2 text-white/80 hover:text-orange-500 transition">
+                            <FaCircleUser className='text-lg lg:text-2xl'></FaCircleUser>
+                            <span className="text-lg lg:text-xl font-met border-b border-transparent hover:border-orange-500 transition">Log in</span>
+                        </button>
+
                         <div className="avatar">
                             <div className="w-6 lg:w-14 rounded-full overflow-hidden animate-spin-slow">
                                 <img src="/Logos/CM-Circle.png" className="rounded-full" />
@@ -103,4 +105,4 @@ const NavBar = ({results,setResults}) => {
     );
 };
 
-export default NavBar;
+export default NavLogBar;
