@@ -37,6 +37,7 @@ const FeaturedSlide = ({ movies }) => {
         {movies
           .filter(movie => movie.rating > 7)
           .map(movie => (
+
             <Link to={`/details/${movie.id}`} key={movie.id}>
               <div key={movie.id} className='p-2 '>
                 <div className='bg-[#0f3c4183] w-50 font-mon border border-gray-700 rounded-2xl py-3 transition-transform duration-300 hover:scale-105'>
@@ -63,6 +64,7 @@ const FeaturedSlide = ({ movies }) => {
                 </div>
               </div>
             </Link>
+            
           ))}
       </Slider>
     </div>

@@ -7,8 +7,8 @@ const NewsMovieCard = ({ data }) => {
             <div className='flex flex-wrap justify-center gap-10'>
                 {data.map((item, index) => (
 
-                    <div className='relative bg-orange-950/40 rounded-lg'>
-                        <div key={index} className='h-60 w-90 lg:w-100 flex justify-between gap-2 border border-gray-700 rounded-lg overflow-hidden relative'>
+                    <div  key={index} className='relative bg-orange-950/40 rounded-lg'>
+                        <div className='h-60 w-90 lg:w-100 flex justify-between gap-2 border border-gray-700 rounded-lg overflow-hidden relative'>
                             <div className='p-2 pr-0 flex flex-col justify-between'>
                                 <div>
                                     <h2 className='line-clamp-1 overflow-hidden text-2xl font-met text-orange-600 pl-3'>{item.title}</h2>
