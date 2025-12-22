@@ -24,7 +24,7 @@ const Details = () => {
 
         {/* image  */}
         <div>
-          <img src={movie.card_picture} alt={movie.title} className="w-full h-[70vh] object-cover rounded-lg mb-5" />
+          <img src={movie.card_picture} alt={movie.title} className="w-full h-[70vh] object-cover rounded-lg mb-5 border-2 border-gray-500" />
         </div>
 
         {/* details  */}
@@ -47,7 +47,7 @@ const Details = () => {
           <p className="text-gray-100 mt-3">Cast: <span className="text-blue-400 font-semibold">RDJ , Crish Evan , Crish Hemsworth , Natasa Romanof</span></p>
           <p className="text-md font-semibold text-white">Description: <span className="text-sm text-gray-400 line-clamp-12 overflow-hidden">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni in commodi similique maxime nobis autem exercitationem tempora aut consectetur! Suscipit iure adipisci, veritatis, dolore reprehenderit excepturi eveniet esse error voluptas cupiditate labore facere fugit est! Vel veritatis reprehenderit nostrum voluptatem ex laborum consectetur et! Sequi debitis explicabo labore at corrupti a amet fugit dignissimos consequatur dicta quaerat repellendus cupiditate ipsum reprehenderit, hic veniam! Corrupti aut natus voluptatibus ducimus, iste, placeat sequi blanditiis nemo magni rem sed quos vel pariatur minima vero dolores, eveniet reprehenderit fugit itaque asperiores quaerat nisi molestias animi incidunt. Recusandae velit omnis provident tenetur illum eveniet optio doloribus doloremque ad vel, quisquam quaerat dolorem cum excepturi eaque dignissimos fugiat pariatur nemo modi officia voluptates tempora possimus. Qui, temporibus dolorem. Necessitatibus officia molestiae sint voluptatem, corporis optio libero a esse alias! Voluptates, veniam maxime? Eligendi maxime voluptas repudiandae ipsum dicta impedit ratione molestiae cumque pariatur nihil voluptatum, quaerat quae assumenda amet cupiditate inventore officia totam explicabo ut ad esse laboriosam? Dignissimos cupiditate voluptates quae, enim, aliquam repellat explicabo nisi, et ipsum consequatur eos? Nesciunt beatae nulla quae, nostrum reiciendis fugit quis labore corrupti culpa! Autem exercitationem expedita sint repellendus nesciunt illo, eligendi, nihil enim, laudantium animi ratione. Dolorem.</span></p>
           <div>
-            
+
           </div>
         </div>
 
