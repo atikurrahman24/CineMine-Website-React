@@ -29,7 +29,6 @@ const NavLogBar = () => {
                         <ul className="menu menu-md dropdown-content bg-black/20 backdrop-blur-md rounded-box mt-3 w-40 p-2 shadow">
                             <NavLink to="/" className={({isActive}) => isActive ? activeClass : normalClass}><li>Home</li></NavLink>
                             <NavLink to="/movies" className={({isActive}) => isActive ? activeClass : normalClass}><li>Movies</li></NavLink>
-                            <NavLink to="/series" className={({isActive}) => isActive ? activeClass : normalClass}><li>Series</li></NavLink>
 
                             <li>
                                 <details>
@@ -64,8 +63,6 @@ const NavLogBar = () => {
                             <ul className="menu menu-horizontal px-1 flex items-center gap-10">
                                 <NavLink to="/" className={({isActive}) => isActive ? activeClass : normalClass}><li className='text-2xl'>Home</li></NavLink>
                                 <NavLink to="/movies" className={({isActive}) => isActive ? activeClass : normalClass}><li className='text-2xl'>Movies</li></NavLink>
-                                <NavLink to="/series" className={({isActive}) => isActive ? activeClass : normalClass}><li className='text-2xl'>Series</li></NavLink>
-
                                 <li>
                                     <details>
                                         <summary className='text-2xl hover:text-orange-600'>Genres</summary>

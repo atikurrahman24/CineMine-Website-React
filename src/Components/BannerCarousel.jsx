@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import { Link } from "react-router";
 export default function BannerCarousel() {
   const totalSlides = 13;
 
@@ -27,7 +28,7 @@ export default function BannerCarousel() {
   const [allContent, setAllContent] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  
+
 
   useEffect(() => {
     const fetchData = async () => {
@@ -125,18 +126,20 @@ export default function BannerCarousel() {
             {suggestions.length > 0 && (
               <ul className="absolute top-full left-0 w-full bg-slate-900/95 mt-2 rounded-xl overflow-hidden shadow-2xl border border-white/10 max-h-60 overflow-y-auto z-50">
                 {suggestions.map((item) => (
-                  <li
-                    key={item.id}
-                    className="px-4 py-3 hover:bg-blue-600 cursor-pointer flex justify-between items-center border-b border-white/5 last:border-none"
-                  >
-                    <div className="flex items-center">
-                      <img src={item.card_picture} alt={item.title} className="w-10 h-10 rounded-md object-cover mr-2" />
-                      <span>{item.title}</span>
-                    </div>
-                    <span className="text-xs text-gray-400">
-                      {item.released_date}
-                    </span>
-                  </li>
+                  <Link to={`/details/${item.id}`}>
+                    <li
+                      key={item.id}
+                      className="px-4 py-3 hover:bg-blue-600 cursor-pointer flex justify-between items-center border-b border-white/5 last:border-none"
+                    >
+                      <div className="flex items-center">
+                        <img src={item.card_picture} alt={item.title} className="w-10 h-10 rounded-md object-cover mr-2" />
+                        <span>{item.title}</span>
+                      </div>
+                      <span className="text-xs text-gray-400">
+                        {item.released_date}
+                      </span>
+                    </li>
+                  </Link>
                 ))}
               </ul>
             )}

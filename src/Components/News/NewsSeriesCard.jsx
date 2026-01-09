@@ -19,7 +19,23 @@ const NewsMovieCard = ({ data }) => {
                             </div>
                             <div className='absolute bottom-2 left-2 right-2 flex justify-between'>
                                 <p className='text-sm py-1 px-2 bg-blue-600/60 rounded-md font-semibold'>Remind Me</p>
-                                <p className='text-sm py-1 px-2 border border-blue-600/70 bg-black/70 rounded-md font-semibold'>learn more...</p>
+
+                                {/* Modal Box  */}
+                                <div>
+                                    {/* The button to open modal */}
+                                    <label htmlFor="my_modal_7" className="cursor-pointer text-sm py-1 px-2 border border-purple-600/70 bg-black/70 rounded-md font-semibold">Learn More...</label>
+
+                                    {/* Put this part before </body> tag */}
+                                    <input type="checkbox" id="my_modal_7" className="modal-toggle" />
+                                    <div className="modal" role="dialog">
+
+                                        <div className="modal-box">
+                                            {/* main interface of modal  */}
+                                        </div>
+
+                                        <label className="modal-backdrop" htmlFor="my_modal_7">Close</label>
+                                    </div>
+                                </div>
                             </div>
 
                         </div>

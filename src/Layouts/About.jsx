@@ -1,55 +1,131 @@
 import React from 'react'
 import NavBar from '../Components/NavBar/NavBar'
-import { IoCall } from "react-icons/io5";
-import { Link } from 'react-router';
-
+import { IoCall } from "react-icons/io5"
+import { Link } from 'react-router'
 
 const About = () => {
   return (
     <div>
-      <NavBar></NavBar>
+      <NavBar />
 
-      <div className="py-24 px-4 min-h-screen bg-black text-white font-mon">
+      <div className="py-24 px-4 md:px-10 lg:px-20 min-h-screen bg-black text-white font-mon">
 
         {/* Title */}
-        <h1 className="text-orange-500 text-6xl font-met font-bold text-center my-20">
+        <h1 className="text-orange-500 text-4xl sm:text-5xl md:text-6xl font-met font-bold text-center my-20">
           About CINEMINE
         </h1>
+        <hr className="mb-12" />
 
         {/* Main Grid */}
-        <div className="max-w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
 
           {/* IMAGE GROUP */}
-          <div className="flex justify-center md:sticky mt-20 animate-float pr-20">
-            <div className='w-72 md:w-92 lg:w-122 h-72 md:h-80 lg:h-102 grid grid-cols-2 items-center justify-center mx-20 gap-4 rotate-10'>
-              <div className='flex items-center justify-center'>
-                <div className='w-25 md:w-45 lg:w-60 h-25 md:h-45 lg:h-60 flex items-center justify-center overflow-hidden rounded-full  border-2 border-[orange] hover:scale-110 transition-transform duration-300 animate-spin-slow'><img src="/Images/1.jpg" alt="" className='-rotate-10 hover:scale-115 transition-transform duration-400' />
+          <div className="flex justify-center md:sticky md:top-32 animate-float">
+            <div
+              className="
+      w-64 h-64
+      sm:w-80 sm:h-80
+      md:w-96 md:h-96
+      lg:w-[32rem] lg:h-[32rem]
+      grid grid-cols-2 gap-4 rotate-6
+    "
+            >
+
+              {/* Top Left – CIRCLE (spin) */}
+              <div className="flex items-center justify-center">
+                <div
+                  className="
+          w-24 h-24
+          sm:w-32 sm:h-32
+          md:w-44 md:h-44
+          lg:w-56 lg:h-56
+          rounded-full
+          overflow-hidden
+          border-2 border-orange-500
+          animate-spin-slow
+        "
+                >
+                  <img
+                    src="/Images/1.jpg"
+                    alt=""
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
-              <div className='flex items-center justify-center'>
-                <div className=' w-25 md:w-45 lg:w-60 h-25 md:h-45 lg:h-60 flex items-center justify-center overflow-hidden  border-2  border-[orange] hover:scale-110 transition-transform duration-300'><img src="/Images/3.jpg" alt="" className='-rotate-10 hover:scale-115 transition-transform duration-400' />
+
+              {/* Top Right – SQUARE */}
+              <div className="flex items-center justify-center">
+                <div className="
+                            w-24 h-24
+                            sm:w-32 sm:h-32
+                            md:w-44 md:h-44
+                            lg:w-56 lg:h-56
+                            overflow-hidden
+                            border-2 border-orange-500
+                            ">
+                  <img
+                    src="/Images/3.jpg"
+                    alt=""
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
-              <div className='flex items-center justify-center'>
-                <div className=' w-25 md:w-45 lg:w-60 h-25 md:h-45 lg:h-60 flex items-center justify-center overflow-hidden border-2  border-[orange] hover:scale-110 transition-transform duration-300'><img src="/Images/2.jpg" alt="" className='-rotate-10 hover:scale-115 transition-transform duration-400' />
+
+              {/* Bottom Left – SQUARE */}
+              <div className="flex items-center justify-center">
+                <div
+                  className="
+          w-24 h-24
+          sm:w-32 sm:h-32
+          md:w-44 md:h-44
+          lg:w-56 lg:h-56
+          overflow-hidden
+          border-2 border-orange-500
+        "
+                >
+                  <img
+                    src="/Images/2.jpg"
+                    alt=""
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
-              <div className='flex items-center justify-center'>
-                <div className=' w-25 md:w-45 lg:w-60 h-25 md:h-45 lg:h-60 flex items-center justify-center overflow-hidden  rounded-full  border-2 border-[orange] hover:scale-110 transition-transform duration-300 animate-spin-slow'><img src="/Images/4.jpg" alt="" className='-rotate-10 hover:scale-115 transition-transform duration-400' />
+
+              {/* Bottom Right – CIRCLE (spin) */}
+              <div className="flex items-center justify-center">
+                <div
+                  className="
+          w-24 h-24
+          sm:w-32 sm:h-32
+          md:w-44 md:h-44
+          lg:w-56 lg:h-56
+          rounded-full
+          overflow-hidden
+          border-2 border-orange-500
+          animate-spin-slow
+        "
+                >
+                  <img
+                    src="/Images/4.jpg"
+                    alt=""
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
+
             </div>
           </div>
 
+
           {/* TEXT CONTENT */}
-          <div className="space-y-16 pr-20 animate-slideLeft">
+          <div className="space-y-16 animate-slideLeft text-center md:text-left">
 
             {/* Intro */}
             <div>
               <h3 className="text-yellow-400 text-3xl font-nos font-bold mb-4 animate-fadeUp">
                 Welcome to CINEMINE
               </h3>
-              <p className="text-gray-300 leading-relaxed  text-justify">
+              <p className="text-gray-300 leading-relaxed text-justify md:text-left">
                 CINEMINE is a cinematic universe built for true movie lovers.
                 From timeless classics to modern blockbusters, our platform lets
                 you explore, discover, and connect through the magic of cinema.
@@ -61,7 +137,7 @@ const About = () => {
               <h3 className="text-yellow-400 text-2xl font-nos font-bold mb-4">
                 Our Mission & Vision
               </h3>
-              <ul className="space-y-3 text-gray-300 list-disc list-inside">
+              <ul className="space-y-3 text-gray-300 list-disc list-inside text-left">
                 <li>Build a strong global movie-lover community</li>
                 <li>Deliver a smooth and immersive movie experience</li>
                 <li>Become a trusted digital hub for cinema enthusiasts</li>
@@ -73,7 +149,7 @@ const About = () => {
               <h3 className="text-yellow-400 text-2xl font-nos font-bold mb-4">
                 Our Progress
               </h3>
-              <ul className="space-y-3 text-gray-300 list-disc list-inside">
+              <ul className="space-y-3 text-gray-300 list-disc list-inside text-left">
                 <li>Rapidly growing international audience</li>
                 <li>Expanded library with classics & latest releases</li>
                 <li>Constant UI/UX and feature improvements</li>
@@ -84,18 +160,19 @@ const About = () => {
         </div>
 
         {/* DEVELOPERS */}
-        <section className="max-w-6xl mx-auto mt-32">
+        <section className="max-w-7xl mx-auto mt-32">
           <h3 className="text-yellow-400 text-3xl font-nos font-bold mb-14 text-center">
-            Developers
+            Developer
           </h3>
+          <hr className="mb-12" />
 
-          <div className="space-y-20">
+          <div className="space-y-12">
 
             {/* Dev Card */}
-            <div className="flex flex-col md:flex-row gap-8 items-start">
+            <div className="flex flex-col md:flex-row gap-6 items-center md:items-start text-center md:text-left">
               <img
                 src="/Author/cheif.jpg"
-                className="w-40 h-40 object-cover rounded-xl border border-orange-500"
+                className="w-36 h-36 md:w-40 md:h-40 object-cover rounded-xl border border-orange-500"
                 alt=""
               />
               <div>
@@ -113,10 +190,10 @@ const About = () => {
             </div>
 
             {/* Dev Card 2 */}
-            <div className="flex flex-col md:flex-row gap-8 items-start">
+            <div className="flex flex-col md:flex-row gap-6 items-center md:items-start text-center md:text-left">
               <img
                 src="/Author/dept.png"
-                className="w-40 h-40 object-cover rounded-xl border border-orange-500"
+                className="w-36 h-36 md:w-40 md:h-40 object-cover rounded-xl border border-orange-500"
                 alt=""
               />
               <div>
@@ -136,14 +213,15 @@ const About = () => {
           </div>
         </section>
 
-        <Link to="/contact" className="mt-10 flex items-center justify-center">
-          <button className="mt-10 flex items-center gap-2 bg-green-600 hover:bg-orange-600 text-white font-bold py-2 px-5 rounded-full transition-all duration-300 hover:scale-105 group">
-            <IoCall className="text-lg transition-transform duration-300 group-hover:rotate-12" />
-            <span className='font-bold text-xl'>Contact Us</span>
+        {/* Contact Button */}
+        <Link to="/contact" className="mt-20 flex justify-center">
+          <button className="flex items-center gap-3 bg-green-600 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-full transition-all duration-300 hover:scale-105 group">
+            <IoCall className="text-xl transition-transform duration-300 group-hover:rotate-12" />
+            <span className="text-lg">Contact Us</span>
           </button>
         </Link>
-      </div>
 
+      </div>
     </div>
   )
 }
